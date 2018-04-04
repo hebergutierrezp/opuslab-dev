@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
+import Footer from "../base/footer.jsx";
 import HeaderBar from "../base/menu.jsx";
-
 
 import Member1 from '../about/team/member1.jsx';
 import Member2 from '../about/team/member2.jsx';
@@ -14,28 +14,36 @@ import Member5 from '../about/team/member5.jsx';
 import Member6 from '../about/team/member6.jsx';
 const styles = theme => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   paper: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+
 });
 
 function CenteredGrid(props) {
-  const { classes } = props;
+  // this.state = {
+  //   direction: 'row',
+  //   justify: 'center',
+  //   alignItems: 'center',
+  // };
 
+
+  const { classes } = props;
+//  const { direction, justify, alignItems }= this.state;
   return (
     <div className={classes.root}>
       <div>
-      <HeaderBar />
+        <HeaderBar />
       </div>
       <Grid container spacing={8}>
-        <Grid item xs={12}>
+        <Grid  item xs={12}>
           <img id='team' src='http://res.cloudinary.com/opuslab/image/upload/v1528656953/02-realizacion-contenidos/cameracroped.jpg'/>
         </Grid>
-        <Grid item xs>
+        <Grid item sm={12} md={7} lg={7} spacing={16}>
           <h1>Nosotros</h1>
           <p class="description">
           Somos un equipo multidisciplinario que conformamos una plataforma creativa en donde realizamos y colaboramos a generar contenidos, utilizando los medios audiovisuales: fotografía, audio, video y cine digital.
@@ -43,9 +51,10 @@ function CenteredGrid(props) {
           Se trata de un grupo de comunicadores educativos apasionados por contar historias; tenemos más de 10 años compartiendo experiencias con compañer@s y con  organizaciones que mediante el arte y sus distintas dimensiones,  buscan transformar sus realidades.
           </p>
         </Grid>
-        <Grid item xs={6}>
-          <h1>Por que Opuslab!</h1> <br/>
-          <p class="description" >Manifiesto<br/>
+        <Grid item sm={12} md={5} lg={5}>
+          <h1>Por que Opuslab!</h1>
+          <p class="manifiesto">Manifiesto</p>
+          <div class="opuslab-text">
             <ul>
               <li>Trabajamos en lo que nos apasiona.</li>
               <li>Hacemos lo que nos gusta.</li>
@@ -56,32 +65,45 @@ function CenteredGrid(props) {
               <li>Creemos en el arte como herramienta de transformación.</li>
               <li>OpusLab es un proyecto abierto, en constante movimiento.</li>
             </ul>
-</p><br/><br/><br/>
+          </div>
         </Grid>
         <br />
-        <Grid container spacing={4}>
-          <Grid item xs>
-            <Member1 />
+        <Grid container spacing={8} alignItems={'center'} justify={'center'}>
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member1 />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <Member2 />
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member2 />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <Member3 />
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member3 />
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container spacing={4}>
-          <Grid item xs>
-            <Member4 />
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member4 />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <Member5 />
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member5 />
+            </Grid>
           </Grid>
-          <Grid item xs>
-            <Member6 />
+          <Grid item sm={12} md={6} lg={4}>
+            <Grid container spacing={16} className={classes.demo} alignItems={'center'} justify={'center'}>
+              <Member6 />
+            </Grid>
           </Grid>
         </Grid>
       </Grid>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
