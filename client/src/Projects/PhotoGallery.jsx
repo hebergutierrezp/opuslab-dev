@@ -1,1 +1,1 @@
-//photogallery
+//photogalleryimport React from 'react';

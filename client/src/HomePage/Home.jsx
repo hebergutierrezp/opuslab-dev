@@ -1,15 +1,19 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-
+import MainImageGallery from "./MainImageGallery.jsx"
 import Video from "./video.jsx"
 
-export default class Home extends React.Component {
+ export default class Home extends React.Component {
   render(){
     return (
+    <div>
       <div>
-        <h1>hello</h1>
         <Video />
       </div>
+      <div>
+        <MainImageGallery/>
+    </div>
+  </div>
     )
   }
 
