@@ -38,12 +38,13 @@ body {
 }
 
 .video-player {
-  background: #fff;
-   padding: 8px;
-   border: 0;
-   box-shadow: 0 0px 0px ;
-   margin-top: 10px;
-
+    background: #fff;
+    width: 560px; /* you have to have a size or this method doesn't work */
+    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 400px; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto;
 }
 
 .video-player-details {
@@ -104,3 +105,84 @@ h5 {
     margin-right: 20px;
   }
 }
+
+h1, h2, h3 {
+  text-align: center;
+   font-family: 'NowRegular';
+   font-weight: normal;
+   font-style: normal;
+}
+body{
+width: allowFullScreen;
+    height: allowFullScreen;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right,red 0%, red 100%), url("OpusLab.png");
+    background-blend-mode: saturation;
+  }
+p{
+  text-align: center;
+   font-family: 'NowRegular';
+   font-weight: normal;
+   font-style: normal;
+  font-size: 12px;
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#727477;
+  padding: 12px 15px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #727477;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:10%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#B60027;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:80px;
+  margin-bottom:5px;
+  width: 100%;
+  max-width: 600px;
+  font-size: .9em;
+  padding: .5em;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#727477;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input:first-of-type
+{
+  margin-top:5px;
+}
+input {
+  font-size: .9em;
+  padding: .5em;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#727477;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  max-width: 250px;
+}"
