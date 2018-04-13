@@ -37,15 +37,7 @@ body {
   box-shadow: 0 1px 0 rgba(0,0,0,0.10);
 }
 
-.video-player {
-    background: #fff;
-    width: 560px; /* you have to have a size or this method doesn't work */
-    height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 0; right: 400px; /* confuse it i guess */
-    bottom: 0; left: 0;
-    margin: auto;
-}
+
 
 .video-player-details {
   background: #fff;
@@ -100,11 +92,6 @@ h5 {
   .video-list {
     margin-left: 20px;
   }
-
-  .video-player {
-    margin-right: 20px;
-  }
-}
 
 h1, h2, h3 {
   text-align: center;
@@ -186,3 +173,30 @@ input {
   width: 50%;
   max-width: 250px;
 }"
+
+
+.contactForm{
+  margin-top: 500px;
+}
+#contactForm{
+  margin-top: 10%;
+}
+
+
+/*This is for the VideoPlyer Component. DO NOT MODIFY THIS AT ALL*/
+
+.show-grid-video{
+ position: relative;
+padding-bottom: 56.25%; /* 16:9 */
+padding-top: 25px;
+height: 0;
+margin-top: 10%;
+margin-bottom: 10%;
+}
+.show-grid-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

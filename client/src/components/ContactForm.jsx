@@ -63,8 +63,10 @@ class ContactForm extends React.Component {
 
   render() {
     return(
-      <form>
-      <div id="Contact-Form">
+      <center>
+      <form className="contactForm">
+      <div id="contactForm">
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
       <h1>Platicame de tu Proyecto!</h1><br />
       <h3>Llena el formato para saber un poco mas sobre ti y tu proyecto.</h3><br />
       <h2>Hola!</h2><p>Mi nombre es <input onChange={this.updateName} value={this.state.name} placeholder="Nombre completo"/> y soy
@@ -81,8 +83,9 @@ class ContactForm extends React.Component {
       <button onClick={this.add}>Enviar!</button>
       </div>
       </form>
+      </center>
     )
   }
-}
+};
 
 export default ContactForm
