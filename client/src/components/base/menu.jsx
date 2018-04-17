@@ -12,12 +12,11 @@ import Proyectos from './DropDown.jsx'
   const HeaderBar = (props) => (
       <AppBar id='appBar'>
           <Toolbar id='menu'>
-          <Link to="/"><Button id='Home' label="Home">Opus</Button></Link>
+          <Button id='Home' component={Link} to="/">Opus</Button>
           <Button id='About' component={Link} to="/aboutUs">Nosotros</Button>
-          <Proyectos id='Proyectos' component={Link} to="/proyectos">Proyectos</Proyectos>
-          <Link to="/project"><Button id='Proyectos' label="Project">Project</Button></Link>
+          <Button id='Proyectos'component={Link} to="/project">Projectos</Button>
           <Button id='Workshop' component={Link} to="/workshop">Formacion</Button>
-          <Link to="/contact"><Button id='Contactus' label="Contact">Contáctanos</Button></Link>
+          <Button id='Contacts' component={Link} to="/contact">Contáctanos</Button>
           </Toolbar>
       </AppBar>
   );

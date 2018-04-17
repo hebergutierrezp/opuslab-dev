@@ -6,6 +6,8 @@ import Grid from 'material-ui/Grid';
 
 import WorkShop1 from '../Workshop/wShop.jsx'
 import WorkShop2 from '../Workshop/wShop2.jsx'
+import HeaderBar from "../base/menu.jsx"
+import Footer from "../base/footer.jsx"
 
 const styles = theme => ({
   root: {
@@ -23,6 +25,9 @@ function CenteredGrid(props) {
 
   return (
     <div className={classes.root}>
+      <div>
+        <HeaderBar />
+      </div>
       <Grid container spacing={16}>
         <Grid item xs={12}>
           <Paper className={classes.paper}>
@@ -57,6 +62,9 @@ function CenteredGrid(props) {
           <Paper className={classes.paper}>xs=3</Paper>
         </Grid>
       </Grid>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Project from '../src/components/HomePage/ProjectsMain.jsx';
 import Contact from '../src/components/HomePage/Contact.jsx'
 import HeaderBar from "../src/components/base/menu.jsx";
 import AboutUs from "../src/components/about/AboutUs.jsx"
-import workshop from "../src/components/Workshop/WorkshopPg.jsx"
+import Workshop from "../src/components/Workshop/WorkshopPg.jsx"
 
 const PrimaryPage = ({ match }) => (
   <div className="primary-page">
@@ -16,7 +16,7 @@ const PrimaryPage = ({ match }) => (
         <Route path={`${match.path}project`} component={Project} />
         <Route path={`${match.path}contact`} component={Contact} />
         <Route path={`${match.path}AboutUs`} component={AboutUs} />
-        <Route path={`${match.path}workshop`} component={workshop} />
+        <Route path={`${match.path}workshop`} component={Workshop} />
         <HeaderBar />
       </Switch>
     </main>

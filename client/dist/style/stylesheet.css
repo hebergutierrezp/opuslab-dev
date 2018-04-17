@@ -1,202 +1,140 @@
-@import url("http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
-
-body {
-  background: #f1f1f1;
+/*Header bar*/
+#appBar{
+ background-color: #B60027;
+ padding-top: 0px;
+ padding-bottom: 0px;
 }
-
-.navbar {
-  background: #fff;
-  margin-bottom: 20px;
+#appBar:hover {
+  background-image: linear-gradient(to right bottom, #b60027, #97142e, #771e30, #56212d, #362126);
 }
-
-.navbar img {
-  height: 40px;
-  width: 50px;
+#Home {
+ padding-top: 0px;
+ padding-bottom: 0px;
+ color: #ffff;
+ padding-left: 15px;
+ padding-right: 125px;
+ text-align: right;
 }
-
-.search-bar {
-  border-radius: 1px;
-  background: #fff;
+#About{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ color: #fff;
+ text-align: right;
 }
-
-.search-bar .form-control {
-  border-radius: 2px;
-  width: 80%
+#Workshop{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-right: 30px;
+ color: #fff;
+ text-align: right;
 }
-.search-bar .btn {
-  border-radius: 2px;
-  border-color: #d3d3d3;
-  background: #f8f8f8;
-  width: 20%;
-  margin-left: -1px;
+#Contactus{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ color: #fff;
+ text-align: right;
 }
-
-.search-bar .btn:hover {
-  border-color: #c6c6c6;
-  background: #f0f0f0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.10);
+/* Photo album*/
+.photo {}
+.photo ul {}
+.photo ul li {
+ display: block;
+ float: left;
+ padding: 5px;
 }
-
-
-
-.video-player-details {
-  background: #fff;
-  padding: 8px;
-  border: 0;
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
-  margin-top: 10px;
+.photo ul li div {
+ display: none;
 }
-
-.video-list {
-  background: #fff;
-  padding: 8px;
-  border: 0;
-  box-shadow: 0 1px 2px rgba(0,0,0,.1);
-  margin-right: 20px;
+.photo ul li div:target {
+ display: inline;
+ align-items: center;
+ text-align:center;
+ align-content: center;
+ background-color: grey
 }
-
-.video-list-entry {
-  font-size: 16px;
-  padding: 8px;
+/*DropDown Proyectos*/
+#proyectos{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ color: #fff;
+ text-align: right;
 }
-
-.video-list-entry-title {
-  font-weight: bold;
+#team{
+ height: 400px;
+ width: 100%;
+ padding-top: 20px;
 }
-
-.video-list-entry-title:hover {
-  color: #e62117;
-  cursor: pointer;
-}
-
-.video-list-entry-detail {
-  font-size: 12px;
-  color: #999;
-}
-
-.loading {
-  padding-left: 20px;
-}
-
-.media-body {
-  padding-left: 20px;
-}
-
-h5 {
-  border: 2px solid red;
-  text-align: center;
-  padding: 10px;
-}
-
-@media (max-width: 767px) {
-  .video-list {
-    margin-left: 20px;
-  }
-
+/*Contact form*/
 h1, h2, h3 {
-  text-align: center;
-   font-family: 'NowRegular';
-   font-weight: normal;
-   font-style: normal;
+ text-align: center;
+  font-family: 'NowRegular';
+  font-weight: normal;
+  font-style: normal;
 }
-body{
-width: allowFullScreen;
-    height: allowFullScreen;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to right,red 0%, red 100%), url("OpusLab.png");
-    background-blend-mode: saturation;
-  }
 p{
-  text-align: center;
-   font-family: 'NowRegular';
-   font-weight: normal;
-   font-style: normal;
-  font-size: 12px;
+ text-align: center;
+  font-family: 'NowRegular';
+  font-weight: normal;
+  font-style: normal;
+ font-size: 12px;
 }
 button {
-  margin-top:15px;
-  margin-bottom:25px;
-  background-color:#727477;
-  padding: 12px 15px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  border: 1px solid #727477;
-  -webkit-transition: .5s;
-  transition: .5s;
-  display: inline-block;
-  cursor: pointer;
-  width:10%;
-  color:#fff;
+ margin-top:15px;
+ margin-bottom:25px;
+ background-color:#727477;
+ padding: 12px 15px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+ border-radius: 5px;
+ border: 1px solid #727477;
+ -webkit-transition: .5s;
+ transition: .5s;
+ display: inline-block;
+ cursor: pointer;
+ width:10%;
+ color:#fff;
 }
 button:hover, .button:hover {
-  background:#B60027;
+ background:#B60027;
 }
 input {
-  margin-bottom:10px;
+ margin-bottom:10px;
 }
 textarea {
-  height:80px;
-  margin-bottom:5px;
-  width: 100%;
-  max-width: 600px;
-  font-size: .9em;
-  padding: .5em;
-  font-family: 'Source Sans Pro',arial,sans-serif;
-  border: 1px solid #cecece;
-  background: #d7d7d7;
-  color:#727477;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+ height:80px;
+ margin-bottom:5px;
+ width: 100%;
+ max-width: 600px;
+ font-size: .9em;
+ padding: .5em;
+ font-family: 'Source Sans Pro',arial,sans-serif;
+ border: 1px solid #cecece;
+ background: #d7d7d7;
+ color:#727477;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
 }
 input:first-of-type
 {
-  margin-top:5px;
+ margin-top:5px;
 }
 input {
-  font-size: .9em;
-  padding: .5em;
-  font-family: 'Source Sans Pro',arial,sans-serif;
-  border: 1px solid #cecece;
-  background: #d7d7d7;
-  color:#727477;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  max-width: 250px;
-}"
-
-
-.contactForm{
-  margin-top: 500px;
-}
-#contactForm{
-  margin-top: 10%;
-}
-
-
-/*This is for the VideoPlyer Component. DO NOT MODIFY THIS AT ALL*/
-
-.show-grid-video{
- position: relative;
-padding-bottom: 56.25%; /* 16:9 */
-padding-top: 25px;
-height: 0;
-margin-top: 10%;
-margin-bottom: 10%;
-}
-.show-grid-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+ font-size: .9em;
+ padding: .5em;
+ font-family: 'Source Sans Pro',arial,sans-serif;
+ border: 1px solid #cecece;
+ background: #d7d7d7;
+ color:#727477;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ width: 50%;
+ max-width: 250px;
 }

@@ -2,9 +2,11 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 
-import VideoPlayer from '../Projects/videoGallery.jsx';
+import Grid  from '../PhotoGallery/Grid.jsx';
 import Footer from "../base/footer.jsx";
 import HeaderBar from "../base/menu.jsx";
+import WorkShop from "../Workshop/WorkshopPg.jsx"
+import VideoP from '../PortafolioVid/Layout.jsx'
 
 
 class Project extends React.Component {
@@ -19,9 +21,12 @@ class Project extends React.Component {
         <HeaderBar />
       </div>
      <div>
-         <VideoPlayer />
-     </div>
-     <div>
+         <VideoP />
+    </div>
+  <div>
+    <Grid />
+  </div>
+    <div>
        <Footer />
      </div>
    </div>
