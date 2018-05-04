@@ -1,10 +1,11 @@
 import React from 'react';
 import Button from 'material-ui/Button';
 import Menu, { MenuItem } from 'material-ui/Menu';
-import { Link } from 'react-dom'
+import { Link } from 'react-router-dom';
 import Fade from 'material-ui/transitions/Fade';
 
-class Proyectos extends React.Component {
+
+class Production extends React.Component {
   constructor(props){
     super(props)
 
@@ -30,20 +31,20 @@ class Proyectos extends React.Component {
 
     return (
       <div>
-        <Button id='proyectos'
+        <button id='Production'
           aria-owns={anchorEl ? 'dropDown' : null}
           aria-haspopup="true"
           onClick={this.handleClick}>
-          Otros
-        </Button>
+          Produccion
+        </button>
         <Menu
           id="dropMenu"
           anchorEl={anchorEl}
           open={Boolean(anchorEl)}
           onClose={this.handleClose}>
-          <MenuItem id='ProduccionProject' component={Link} to="/project">Produccion</MenuItem>
-          <MenuItem id='Realizacion' component={Link} to="/realizacion">Realizacion de Contenidos</MenuItem>
-          <MenuItem id='Seguimiento' component={Link} to="/realizacion">Seguimiento de Obra</MenuItem>
+          <MenuItem id='Produccion' component={Link} to="/portafolio">Portafolio</MenuItem>
+          <MenuItem id='Proyectos' component={Link} to="/project">Realizacion de Contenidos</MenuItem>
+          <MenuItem id='' component={Link} to="/realizacion">Seguimiento de Obra</MenuItem>
           <MenuItem id='Documentary' component={Link} to="/followUp">Documentales</MenuItem>
           <MenuItem id='Colaboration' component={Link} to="/colaboration">Colaboraciones</MenuItem>
         </Menu>
@@ -52,4 +53,4 @@ class Proyectos extends React.Component {
   }
 }
 
-export default Proyectos;
+export default Production;

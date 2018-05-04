@@ -17,7 +17,8 @@ const PrimaryPage = ({ match }) => (
         <Route path={`${match.path}contact`} component={Contact} />
         <Route path={`${match.path}AboutUs`} component={AboutUs} />
         <Route path={`${match.path}workshop`} component={Workshop} />
-        <HeaderBar />
+      <HeaderBar />
+
       </Switch>
     </main>
   </div>
