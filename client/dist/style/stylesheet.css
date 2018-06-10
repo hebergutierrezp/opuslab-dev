@@ -4,35 +4,42 @@
  padding-top: 0px;
  padding-bottom: 0px;
 }
-#appBar:hover {
+#appBar{
   background-image: linear-gradient(to right bottom, #b60027, #97142e, #771e30, #56212d, #362126);
 }
 #Home {
- padding-top: 0px;
- padding-bottom: 0px;
- color: #ffff;
- padding-left: 15px;
- padding-right: 125px;
- text-align: right;
+  background: url('logo150-35.png');
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 15px;
+  padding-right: 125px:
+  text-aligns: right;
 }
 #About{
- padding-top: 0px;
- padding-bottom: 0px;
- color: #fff;
- text-align: right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
 }
 #Workshop{
- padding-top: 0px;
- padding-bottom: 0px;
- padding-right: 30px;
- color: #fff;
- text-align: right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
 }
 #Contactus{
- padding-top: 0px;
- padding-bottom: 0px;
- color: #fff;
- text-align: right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+#VideoGalery{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
 }
 /* Photo album*/
 .photo {}
@@ -80,22 +87,21 @@ p{
 }
 button {
  margin-top:15px;
- margin-bottom:25px;
- background-color:#727477;
+ margin-bottom:16px;
+ background-color: Transparent;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ border-color: Transparent;
  padding: 12px 15px;
- -ms-border-radius: 5px;
- -o-border-radius: 5px;
- border-radius: 5px;
- border: 1px solid #727477;
- -webkit-transition: .5s;
- transition: .5s;
- display: inline-block;
- cursor: pointer;
- width:10%;
+ display: inline;
+ width:auto;
  color:#fff;
+ font-family: 'NowRegular';
+ font-style: normal;
+ font-size: 15px;
 }
 button:hover, .button:hover {
- background:#B60027;
+ background:Transparent;
 }
 input {
  margin-bottom:10px;

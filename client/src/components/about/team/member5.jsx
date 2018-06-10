@@ -21,20 +21,19 @@ function SimpleMediaCard(props) {
   const { classes } = props;
   return (
     <div>
-      <Card className={classes.card} elevation={1} >
+      <Card className={classes.card} elevation={1}>
         <CardMedia
           className={classes.media}
-          image="http://res.cloudinary.com/opuslab/image/upload/v1525367231/Crew/Miguel.jpg"
-          title="Opuslab's Crew"
+          image="http://res.cloudinary.com/opuslab/image/upload/v1525367229/Crew/AnaLia.jpg"
+          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
-          Miguel Ángel Rosales
+          Ana Lía Sánchez de la Vega
 
           </Typography>
           <Typography component="p">
-          Planeación / Gestión / Producción<br />
-          Me gusta hacer realidad los proyectos tal como surgen de la imaginación. Disfruto de crear contenidos audiovisuales y de hacer timelapses.
+          Fotografía / Realización / Cine Digital / Post
 
           </Typography>
         </CardContent>

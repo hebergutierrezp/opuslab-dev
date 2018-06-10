@@ -13,7 +13,7 @@ const styles = {
     margin: 10,
   },
   media: {
-    height: 280,
+    height: 200,
   },
 };
 
@@ -21,20 +21,27 @@ function SimpleMediaCard(props) {
   const { classes } = props;
   return (
     <div>
-      <Card className={classes.card} elevation={1} >
-        <CardMedia
-          className={classes.media}
-          image="http://res.cloudinary.com/opuslab/image/upload/v1525367231/Crew/Miguel.jpg"
-          title="Opuslab's Crew"
-        />
+      <Card className={classes.card} elevation={1}>
         <CardContent>
           <Typography gutterBottom variant="headline" component="h2">
-          Miguel Ángel Rosales
+          Colaboradores:
 
           </Typography>
           <Typography component="p">
-          Planeación / Gestión / Producción<br />
-          Me gusta hacer realidad los proyectos tal como surgen de la imaginación. Disfruto de crear contenidos audiovisuales y de hacer timelapses.
+          Ana Ramirez<br />
+          Fotografía / Video / Producción
+          <br /><br />
+          Adriana Somofora<br />
+          Fotografía / Video
+          <br /><br />
+          Omar Verdiguel<br />
+          Gerardo Miranda<br />
+          Fotografía / Drone film maker<br /><br />
+          Mónica Garfias
+          <br />
+          Aleks Ikoods<br />
+          Diseño / Animación / Compositing<br />
+          Me gusta sorprender y ser sorprendido visualmente, todo reto y dificultad tiene la condición de ser tumbada.
 
           </Typography>
         </CardContent>

@@ -34,8 +34,11 @@ class Production extends React.Component {
         <button id='Production'
           aria-owns={anchorEl ? 'dropDown' : null}
           aria-haspopup="true"
+          font-family='NowRegular'
+          font-style='normal'
+          font-size='12px'
           onClick={this.handleClick}>
-          Produccion
+          PRODUCCION
         </button>
         <Menu
           id="dropMenu"

@@ -6,7 +6,7 @@
 }
 
 html{
-	background-color: #eaf0f2;
+	background-color: #ffff;
 }
 
 body{
@@ -40,7 +40,7 @@ header h2 a{
 	text-transform: uppercase;
 }
 
-header h2 a:hover{
+header h2 {
 	background-color:#F05283;
 	transition:0.2s;
 	color:#fff;
@@ -73,7 +73,7 @@ header ul li a.active{
 	pointer-events: none;
 }
 
-header ul li a:hover {
+header ul li {
 	opacity: 1;
 }
 

@@ -13,10 +13,10 @@ import Button from 'material-ui/Button';
   const HeaderBar = (props) => (
       <AppBar id='appBar'>
           <Toolbar id='menu'>
-          <Button id='Home' component={Link} to="/">Opus</Button>
+          <Button id='Home' component={Link} to="/"></Button>
           <Button id='About' component={Link} to="/aboutUs">Nosotros</Button>
           <Button id='Workshop' component={Link} to="/workshop">Formacion</Button>
-          <Button id='Contacts' component={Link} to="/contact">Contáctanos</Button>
+          <Button id='Contactus' component={Link} to="/contact">Contactanos</Button>
           <Production />
           </Toolbar>
       </AppBar>
