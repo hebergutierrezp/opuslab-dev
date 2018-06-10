@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Paper from 'material-ui/Paper';
 import Grid from 'material-ui/Grid';
-import Footer from "../base/footer.jsx";
 import HeaderBar from "../base/menu.jsx";
+
 
 import Member1 from '../about/team/member1.jsx';
 import Member2 from '../about/team/member2.jsx';
@@ -29,7 +29,7 @@ function CenteredGrid(props) {
   return (
     <div className={classes.root}>
       <div>
-
+      <HeaderBar />
       </div>
       <Grid container spacing={8}>
         <Grid item xs={12}>
