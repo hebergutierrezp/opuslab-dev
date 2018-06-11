@@ -48,7 +48,7 @@ class Production extends React.Component {
           <MenuItem id='Produccion' component={Link} to="/portafolio">Portafolio</MenuItem>
           <MenuItem id='Proyectos' component={Link} to="/project">Realizacion de Contenidos</MenuItem>
           <MenuItem id='' component={Link} to="/realizacion">Seguimiento de Obra</MenuItem>
-          <MenuItem id='Documentary' component={Link} to="/followUp">Documentales</MenuItem>
+          <MenuItem id='Documentary' component={Link} to="/Documentary">Documentales</MenuItem>
           <MenuItem id='Colaboration' component={Link} to="/colaboration">Colaboraciones</MenuItem>
         </Menu>
       </div>

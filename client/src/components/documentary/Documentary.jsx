@@ -7,6 +7,8 @@ import Paper from 'material-ui/Paper';
 import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import SwipeableViews from 'react-swipeable-views';
+import Footer from "../base/footer.jsx";
+import HeaderBar from "../base/menu.jsx";
 
 const imgData = [
   {
@@ -87,6 +89,9 @@ class AlbumOne extends React.Component {
 
     return (
       <div className={classes.root}>
+        <div>
+          <HeaderBar />
+        </div>
         <br></br><br></br><br></br>
         <SwipeableViews
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
@@ -117,7 +122,11 @@ class AlbumOne extends React.Component {
             </Button>
           }
         />
-      </div>
+        <div>
+          <Footer />
+        </div>
+  </div>
+
     );
   }
 }
