@@ -1,4 +1,3 @@
-# Opus
+# OpusLab
 
-
-This is the Main Repo of opus Lab.
+https://opuslab.herokuapp.com

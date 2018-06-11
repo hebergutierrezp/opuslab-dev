@@ -5,6 +5,7 @@ import MainImageGallery from "./MainImageGallery.jsx"
 import Video from "./video.jsx"
 import HeaderBar from "../base/menu.jsx"
 import About from "../about/AboutUs.jsx"
+import Footer from "../base/footer.jsx"
 
  export default class Home extends React.Component {
   render(){
@@ -18,6 +19,9 @@ import About from "../about/AboutUs.jsx"
       </div>
       <div>
         <MainImageGallery />
+    </div>
+    <div>
+      <Footer />
     </div>
   </div>
     )

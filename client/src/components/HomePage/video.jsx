@@ -8,6 +8,7 @@ class Video extends React.Component {
 			this.state = {
 				videoURL: 'homevideo.mp4'
 			}
+
 		}
 render() {
 return(
