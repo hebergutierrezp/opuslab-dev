@@ -30,7 +30,7 @@ class Video1 extends React.Component {
   render() {
     return (
       <div>
-      <iframe src="https://player.vimeo.com/video/255117757?title=0&byline=0&portrait=0" width="120" height="68" frameborder="3"></iframe>
+      <iframe src="https://player.vimeo.com/video/255117757?title=0&byline=0&quality=1080p&portrait=0" width="120" height="68" frameborder="3"></iframe>
       <h2>OpusLab video</h2>
         <Button style={{width:'500px'}} onClick={this.handleClickOpen}>
         <Card style={{width:'500px'}}>Video realizado para celebrar los 100 a&ntilde;os de la figura del Agente Aduanal</Card>
