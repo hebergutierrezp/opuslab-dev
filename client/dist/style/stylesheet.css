@@ -1,1 +1,146 @@
-/* main css */
+/*Header bar*/
+#appBar{
+ background-color: #B60027;
+ padding-top: 0px;
+ padding-bottom: 0px;
+}
+#appBar{
+  background-image: linear-gradient(to right bottom, #b60027, #97142e, #771e30, #56212d, #362126);
+}
+#Home {
+  background: url('logo150-35.png');
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 15px;
+  padding-right: 125px:
+  text-aligns: right;
+}
+#About{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+#Workshop{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+#Contactus{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+#VideoGalery{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: #fff;
+  text-align: right;
+}
+/* Photo album*/
+.photo {}
+.photo ul {}
+.photo ul li {
+ display: block;
+ float: left;
+ padding: 5px;
+}
+.photo ul li div {
+ display: none;
+}
+.photo ul li div:target {
+ display: inline;
+ align-items: center;
+ text-align:center;
+ align-content: center;
+ background-color: grey
+}
+/*DropDown Proyectos*/
+#proyectos{
+ padding-top: 0px;
+ padding-bottom: 0px;
+ color: #fff;
+ text-align: right;
+}
+#team{
+ height: 400px;
+ width: 100%;
+ padding-top: 20px;
+}
+/*Contact form*/
+h1, h2, h3 {
+ text-align: center;
+  font-family: 'NowRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+p{
+ text-align: center;
+  font-family: 'NowRegular';
+  font-weight: normal;
+  font-style: normal;
+ font-size: 12px;
+}
+button {
+ margin-top:15px;
+ margin-bottom:16px;
+ background-color: Transparent;
+ -webkit-box-shadow: none;
+ -moz-box-shadow: none;
+ border-color: Transparent;
+ padding: 12px 15px;
+ display: inline;
+ width:auto;
+ color:#fff;
+ font-family: 'NowRegular';
+ font-style: normal;
+ font-size: 15px;
+}
+button:hover, .button:hover {
+ background:Transparent;
+}
+input {
+ margin-bottom:10px;
+}
+textarea {
+ height:80px;
+ margin-bottom:5px;
+ width: 100%;
+ max-width: 600px;
+ font-size: .9em;
+ padding: .5em;
+ font-family: 'Source Sans Pro',arial,sans-serif;
+ border: 1px solid #cecece;
+ background: #d7d7d7;
+ color:#727477;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+input:first-of-type
+{
+ margin-top:5px;
+}
+input {
+ font-size: .9em;
+ padding: .5em;
+ font-family: 'Source Sans Pro',arial,sans-serif;
+ border: 1px solid #cecece;
+ background: #d7d7d7;
+ color:#727477;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ -webkit-background-clip: padding-box;
+ background-clip: padding-box;
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+ width: 50%;
+ max-width: 250px;
+}
