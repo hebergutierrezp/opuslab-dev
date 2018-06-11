@@ -5,10 +5,16 @@
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
+<<<<<<< HEAD
 	border: 6px solid green;
 	padding: 15px 15px;
 	margin-top: 15px;
 	margin: 0;
+=======
+
+	padding: 15px 15px;
+	margin-top: 15px;
+>>>>>>> video component is done
 }
 
 .footer-distributed .footer-left,
